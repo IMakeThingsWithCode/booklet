@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://allfont.net/allfont.css?fonts=titan-one" rel="stylesheet" type="text/css" />
+    </link>
+</head>
+
+<body onload="hideLoadingBar()">
+
+    <h1>Booklet</h1>
+    <p>Your next best book</p>
+
+    <div id="searchBox">
+        <form action="/" class="form">
+            <input id="add" type="text" oninput="addCategoryBooklet()"></input>
+            <button class="searchButton" type="submit" id="searchButton">
+                <img src="files/search.png" />
+            </button>
+        </form>
+    </div>
+
+    <div id="loadingBar" class="loader" visibility="hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <div id="titlesCont">
+
+    </div>
+
+    <img id="cloudicon" src="files/cloud.png" />
+</body>
+
+</html>
